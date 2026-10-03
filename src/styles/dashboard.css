@@ -35,8 +35,12 @@ body,
   position: absolute;
   top: 50%;
   left: 50%;
+  display: grid;
+  grid-template-rows: 128px minmax(0, 1fr);
+  gap: 24px;
   width: 1920px;
   height: 1080px;
+  padding: 0 48px 40px;
   overflow: hidden;
   transform-origin: center center;
   background:
@@ -53,11 +57,10 @@ body,
 }
 
 .dashboard-header {
-  position: absolute;
-  top: 48px;
-  right: 64px;
-  left: 64px;
-  padding-bottom: 28px;
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 12px 16px 0;
   text-align: center;
 }
 
@@ -82,16 +85,11 @@ body,
   text-shadow: 0 0 24px rgb(60 177 255 / 35%);
 }
 
-.dashboard-placeholder {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: 0;
-  transform: translate(-50%, -50%);
-  color: #8cb4d4;
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 2px;
-  white-space: nowrap;
+.dashboard-body {
+  display: grid;
+  /* Divide the space remaining after gaps into 25% / 50% / 25%. */
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr);
+  gap: 24px;
+  min-width: 0;
+  min-height: 0;
 }
