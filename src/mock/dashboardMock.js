@@ -22,3 +22,14 @@ export const recentOutages = [
     voltage: 115,
   },
 ]
+
+// 仅用于前端开发演示，不代表真实 NYISO 统计结果。
+export const annualOutageTrend = [
+  { year: '2019', count: 120 },
+  { year: '2020', count: 156 },
+  { year: '2021', count: 143 },
+  { year: '2022', count: 181 },
+  { year: '2023', count: 169 },
+  { year: '2024', count: 205 },
+  { year: '2025', count: 192 },
+]
