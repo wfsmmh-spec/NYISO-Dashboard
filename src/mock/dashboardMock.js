@@ -33,3 +33,17 @@ export const annualOutageTrend = [
   { year: '2024', count: 205 },
   { year: '2025', count: 192 },
 ]
+
+// 仅用于前端开发演示，不代表真实 NYISO 统计结果。
+export const voltageLevelOutages = [
+  { voltage: '115 kV', count: 320 },
+  { voltage: '138 kV', count: 210 },
+  { voltage: '230 kV', count: 180 },
+  { voltage: '345 kV', count: 96 },
+]
+
+// 仅用于前端开发演示，不代表真实 NYISO 统计结果。
+export const outageTypeDistribution = [
+  { name: 'Automatic', value: 936 },
+  { name: 'Scheduled', value: 348 },
+]

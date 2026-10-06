@@ -1,5 +1,6 @@
 <script setup>
 import PanelCard from '../common/PanelCard.vue'
+import VoltageLevelBarChart from '../charts/VoltageLevelBarChart.vue'
 import { dashboardSummary } from '@/mock/dashboardMock.js'
 </script>
 
@@ -8,5 +9,6 @@ import { dashboardSummary } from '@/mock/dashboardMock.js'
     <p>Total Outages: {{ dashboardSummary.totalOutages }}</p>
     <p>Automatic Outages: {{ dashboardSummary.automaticOutages }}</p>
     <p>Scheduled Outages: {{ dashboardSummary.scheduledOutages }}</p>
+    <VoltageLevelBarChart />
   </PanelCard>
 </template>
