@@ -5,21 +5,28 @@ export const dashboardSummary = {
   scheduledOutages: 348,
 }
 
+// 仅用于前端开发演示，不代表真实 NYISO 数据。
 export const recentOutages = [
   {
     id: 1,
     lineName: 'LINE_A',
-    voltage: 345,
+    voltage: '345 kV',
+    type: 'Automatic',
+    time: '14:25',
   },
   {
     id: 2,
     lineName: 'LINE_B',
-    voltage: 230,
+    voltage: '230 kV',
+    type: 'Scheduled',
+    time: '13:40',
   },
   {
     id: 3,
     lineName: 'LINE_C',
-    voltage: 115,
+    voltage: '115 kV',
+    type: 'Automatic',
+    time: '12:18',
   },
 ]
 
@@ -46,4 +53,23 @@ export const voltageLevelOutages = [
 export const outageTypeDistribution = [
   { name: 'Automatic', value: 936 },
   { name: 'Scheduled', value: 348 },
+]
+
+// 仅用于前端开发演示，不代表真实 NYISO 统计结果。
+export const dashboardKpis = [
+  {
+    id: 'total',
+    label: 'Total Outages',
+    value: 1284,
+  },
+  {
+    id: 'automatic',
+    label: 'Automatic Outages',
+    value: 936,
+  },
+  {
+    id: 'scheduled',
+    label: 'Scheduled Outages',
+    value: 348,
+  },
 ]
