@@ -25,7 +25,7 @@ defineProps({
 <style scoped>
 .recent-outage-list {
   display: grid;
-  gap: 10px;
+  gap: 12px;
   margin: 24px 0 0;
   padding: 0;
   list-style: none;
