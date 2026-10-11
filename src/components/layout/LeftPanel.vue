@@ -6,7 +6,7 @@ import { dashboardKpis } from '@/mock/dashboardMock.js'
 </script>
 
 <template>
-  <PanelCard title="Left Panel">
+  <PanelCard title="Outage Overview">
     <div class="kpi-grid">
       <KpiCard
         v-for="item in dashboardKpis"

@@ -70,6 +70,6 @@ onBeforeUnmount(() => {
 <style scoped>
 .annual-trend-chart {
   width: 100%;
-  height: 360px;
+  height: 100%;
 }
 </style>

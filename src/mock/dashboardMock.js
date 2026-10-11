@@ -1,12 +1,6 @@
 // 仅用于前端开发演示，不代表真实 NYISO 数据或统计结果。
 
 // Dashboard KPI
-export const dashboardSummary = {
-  totalOutages: 1284,
-  automaticOutages: 936,
-  scheduledOutages: 348,
-}
-
 export const dashboardKpis = [
   {
     id: 'total',
